@@ -1,0 +1,248 @@
+section {
+	box-shadow: inset 0 0 15px black;
+	padding: 20px;
+	background-color: white;
+	border-radius: 25px;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	border: 2px dashed gray;
+	overflow: auto;
+	position: relative;
+}
+
+section > h1 {
+	text-align: center;
+	font-family: 'Calistoga', cursive;
+	font-size: 45px;
+	padding-bottom: 20px;
+}
+
+
+/* Forms */
+legend {
+	border-radius: 25px;
+	background-color: #a1e38c;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 15px;
+	color: black;
+	width: 425px;
+	border: 1px solid gray;
+}
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 0.9em;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   width: 20%;
+   text-align: right;
+}
+
+
+
+/* Left Form */
+form#left {
+	width: 49%;
+	display: block;
+	overflow: auto;
+	font-family: 'Roboto', sans-serif;
+	float: left;
+}
+
+fieldset#left {
+	display: block;
+	border-radius: 25px;
+	background-color: #9ad6f7;
+}
+
+form#left input, form#left select {
+   display: block;
+   float: left;
+   width: 45%;
+}
+
+div#checkBox {
+	clear: both;
+	overflow: auto;
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div#checkBox input{
+	width: auto;
+	flex-flow: row wrap;
+}
+
+div#checkBox label {
+	width: auto;
+	flex-flow: row wrap;
+	padding-top: 4px;
+	font-family: 'Roboto', sans-serif;
+}
+
+div#feedback {
+	overflow: auto;
+	width: auto;
+}
+
+div#feedback label {
+	width: auto;
+	padding-top: 4px;
+	font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+	margin-top: 2px;
+	height: 75px;
+	width: 99%;
+}
+
+/* Right Form */
+form#right {
+	margin-left: auto;
+	margin-right: auto;
+	width: 49%;
+	display: block;
+	overflow: auto;
+	font-family: 'Roboto', sans-serif;
+	float: right;
+}
+
+form#right input, form#right select {
+   display: block;
+   float: left;
+   width: 67%;
+}
+
+fieldset#right {
+	display: block;
+	float: right;
+	border-radius: 25px;
+	background-color: #9ad6f7;
+}
+fieldset#right label {
+	width: 25%;
+}
+
+div#cards {
+	display: flex;
+	overflow: auto;
+	padding-left: 155px;
+}
+
+div#cards input{
+	width: auto;
+	flex-flow: row wrap;
+}
+
+div#cards label {
+	width: auto;
+	flex-flow: row wrap;
+	padding-top: 4px;
+	font-family: 'Roboto', sans-serif;
+}
+
+label.cardLabel {
+	overflow: auto;
+	display: inline-block;
+	float: none;
+	width: auto;
+}
+
+input[type='radio'] {
+	width: auto;
+	float: none;
+	clear: none;
+	margin-right: 15px;
+}
+
+/* Right Fieldset: Billing Address */
+div#billAddress label {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   text-align: right;
+}
+
+div#billAddress input#bBox {
+	width: 25%;
+}
+
+div#billAddress input#cBox {
+	width: 19%;
+}
+
+div#billAddress input#sBox {
+	width: 10%;
+}
+
+div#billAddress input#zBox {
+	width: 10%;
+}
+
+/* Right Fieldset: CVC */
+fieldset#right select#monthList, fieldset#right select#yearList {
+	width: 34%;
+}
+
+button {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 25px;
+	border-radius: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+/* Show me the money */
+img#money1 {
+	width: 12%;
+	position: absolute;
+	bottom: 3%;
+	right: 37%;
+}
+
+img#money2 {
+	width: 12%;
+	position: absolute;
+	bottom: 3%;
+	right: 25%;
+}
+
+img#money3 {
+	width: 12%;
+	position: absolute;
+	bottom: 3%;
+	right: 13%;
+}
+
+img#money4 {
+	width: 12%;
+	position: absolute;
+	bottom: 3%;
+	right: 1%;
+}
+
+/* Validation Styles */
+	input:not([type='radio']):focus {
+		background-color: rgb(255, 218, 165);
+	}
+	
+	input:not([type='radio']):focus:valid {
+		background: rgb(215, 255, 215) url("valid.png") bottom right/contain no-repeat;
+	}
+
+	input:not([type='radio']):focus:invalid {
+		background: rgb(255, 245, 215) url("invalid.png") bottom right/contain no-repeat;
+	}
+
+

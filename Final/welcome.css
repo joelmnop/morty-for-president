@@ -1,0 +1,42 @@
+html {
+	background-color: black;
+	height: 100%;
+}
+
+body {
+	margin: 0px auto;
+	width: 100%;
+	height: 100%;
+	background-image: url("portal.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+
+section {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	opacity: 0.9;
+	color: black;
+	font-family: 'Calistoga', cursive;
+	font-size: 35px;
+	border: 5px solid #36981c;
+	padding: 5px;
+	width: 45%;
+	transform: translate(-50%, -50%);
+	line-height: 2;
+}
+
+center {
+	font-size: 15px;
+	color: green;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
